@@ -1,0 +1,506 @@
+@charset "UTF-8";
+
+:root {
+
+    --color1: #FDF2BF;
+    --color2: #240008;
+    --color3: #F0B400;
+    --color4: #7A001B;
+    --color45: #520112;
+    --color5: #00A8E6;
+
+    --altcolor1: #403502;
+    --altcolor2: #FFDBE3;
+    --altcolor3: #FF859F;
+    --altcolor4: #1AC2FF;
+    --altcolor5: #FFC30F;
+}
+
+
+
+
+
+
+
+body{
+    background-color:var(--color2);
+    color: var(--color1 , --altcolor1);
+    font-family: Montserrat;
+
+}
+
+
+nav{
+    margin:1rem;
+    font-family: Montserrat;
+    font-weight: 300;
+    font-size: x-large;
+}
+
+nav a{
+    text-decoration: none;
+}
+
+nav a:active{
+    color: var(--color1);
+
+}
+
+nav a:hover{
+    color: var(--color1);
+    
+
+    border-radius: 12px;
+
+
+}
+
+nav a:visited{
+    color: var(--color1);
+
+}
+
+nav a:link{
+    color: var(--color1);
+}
+
+#sobreMim1{
+    font-size: 1rem;
+    all:unset;
+    cursor: pointer;
+}
+
+#projetos1{
+    font-size: 1rem;
+	background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+}
+
+#contato1{
+    font-size: 1rem;
+    all: unset;
+    cursor: pointer;
+}
+
+.navbar{
+    display: flex;
+    justify-content: flex-end;
+    gap:3rem;
+    position: relative ;
+    right: 12rem;
+    padding: 1rem;
+
+
+}
+
+.mainitem{
+    margin:1rem;
+    font-size:3rem;
+    font-family: Overpass Mono;
+    font-weight: bold;
+    display: flex;
+
+    
+
+}
+
+
+
+#body .desaparecer{
+    display: none !important;
+    z-index: -10 !important;
+    opacity: 0 !important; 
+}
+
+#body .aparecer{
+    display: block !important;
+    z-index: 10 !important;
+    opacity: 1 !important;
+}
+
+
+/* Página Principal */
+
+
+
+
+
+.containermain{
+    top:10;
+    position: absolute;
+    background: var(--color4);
+    height: 50vh;
+    width: 95vw;
+    border-radius: 12px;
+    margin: 1rem;
+    display: flex;
+    
+
+}
+
+.containermain:hover{
+    box-shadow: var(--color45) 4px 4px 3px;
+
+}
+
+.containerimage img{
+    top:10;
+    position: absolute;
+    height:20rem;
+    width:20rem;
+    max-height: 20rem;
+}
+
+
+
+.containertext{
+    top:10;
+    position: absolute;
+    padding: 1rem;
+    margin:1rem;
+    max-width:35rem;
+    color: var(--color3);
+    animation:gradient 3s linear;
+    animation-iteration-count: infinite;
+}
+
+.containertext p{
+    top:10;
+    position: absolute;
+    font-family: PT Sans;
+    color: var(--color1);
+}
+
+.itemboxes{
+    top:10;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.itembox1{
+    top:10;
+    position: absolute;
+    background: var(--color4);
+    height: 40vh;
+    width: 25vw;
+    border-radius:12px ;
+    margin: 1rem;
+    
+}
+
+.itembox1:hover{
+    box-shadow:var(--color45) 4px 4px 3px;
+}
+
+.itemtext1{
+    top:10;
+    position: absolute;
+    margin: 1rem;
+}
+
+ .itemtext1 p{
+    top:10;
+    position: absolute;
+    font-family: PT Sans;
+ }
+
+
+.itembox2{
+    top:10;
+    position: absolute;
+    background: var(--color4);
+    height: 40vh;
+    width: 25vw;
+    border-radius: 18px;
+    margin: 1rem;
+}
+
+.itembox2:hover{
+    top:10;
+    position: absolute;
+    box-shadow: var(--color45) 4px 4px 3px;
+}
+
+.itemtext2{
+    top:10;
+    position: absolute;
+    margin: 1rem;
+}
+
+.itemtext2 p{
+    top:10;
+    position: absolute;
+    font-family: PT Sans;
+}
+
+.itembox3{
+    top:10;
+    position: absolute;
+    background: var(--color4);
+    height: 40vh;
+    width: 50vh;
+    border-radius: 18px;
+    margin: 1rem;
+}
+
+.itembox3:hover{
+    box-shadow: var(--color45) 4px 4px 3px;
+}
+
+.itemtext3{
+    top:10;
+    position: absolute;
+    margin: 1rem;
+}
+
+.itemtext3 p{
+    top:10;
+    position: absolute;
+    font-family: PT Sans;
+}
+
+.itemtext3 p a:hover{
+    color: var(--color5);
+
+}
+
+.itemtext3 p a:visited{
+    color: var(--color3);
+}
+
+.itemtext3 p a{
+    text-decoration: none;
+}
+
+
+@keyframes gradient{
+    100%,0%{
+        color: #a80024;
+    }
+    55%{
+        color: #ffc9d5;
+    }
+
+}
+
+/* Fim da Página Principal */
+
+
+/* Início da Página Sobre Mim */
+
+.aboutmecontainer{
+    position: absolute;
+    background:var(--color4);
+    margin: 1rem;
+    height: 80vh ;
+    width: 95vw;
+    display: flex;
+    border-radius: 12px;
+
+}
+
+.aboutmecontainer:hover{
+    box-shadow: var(--color45) 4px 4px 3px;
+}
+
+.aboutmecontainer img{
+ 
+    height:20rem;
+    width:15rem;
+    margin: 2rem;
+    padding: 1rem;
+    border-radius: 10%;
+    
+}
+
+
+
+.aboutme{
+
+    margin: 1rem;
+    display: flex;
+    align-content: center;
+    width: 85%;
+    
+}
+
+.aboutme p{
+
+    margin-top: 5rem;
+    font-size:large;
+}
+
+
+
+
+/* Fim da Página Sobre Mim */
+
+
+/* Meus Projetos Página Início */
+
+.myprojectscontainer{
+    top:10;
+    position: absolute;
+    margin: 1rem;
+    height: 80vh;
+    width:95vw;
+    background: var(--color4);
+   border-radius: 12px;
+}
+
+
+.myprojects{
+    top:10;
+    position: absolute;
+  display: flex;
+  justify-content: center;
+}
+
+.projectcards{
+    top:10;
+    position: absolute;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+
+.projectcard1{
+    top:10;
+    position: absolute;
+    background: var(--color2);
+    height: 17rem;
+    width:25vw;
+    border-radius: 12px;
+    margin: 1rem;
+}
+
+.projectcard1 img{
+    top:10;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+}
+
+.projectcard2{
+    top:10;
+    position: absolute;
+    background: var(--color2);
+    height: 17rem;
+    width:25vw;
+    border-radius: 12px;
+    margin: 1rem;
+}
+
+.projectcard2 img{
+    top:10;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+}
+
+.projectcard3{
+    top:10;
+    position: absolute;
+    transform: translateY(-7px);
+    height: 17rem;
+    width:25vw;
+    border-radius: 12px;
+    margin: 1rem;
+}
+
+.projectcard3 img{
+    top:10;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+}
+
+/* Meus Projetos Página Fim  */
+
+/* Fale comigo Página Início */
+
+.contactmecontainer{
+    top:10;
+    position: absolute;
+    margin: 1rem;
+    height: 80vh;
+    width:95vw;
+    background: var(--color4);
+    border-radius: 12px;
+}
+
+.contactmeheader{
+    top:10;
+    position: absolute;
+    padding: 4rem;
+    display: flex;
+    justify-content: center;
+}
+
+.contactmeicons{
+    top:10;
+    position: absolute;
+    display: flex;
+    justify-content: space-around;
+    margin:2rem;
+
+}
+
+.contacticon1{
+    top:10;
+    position: absolute;
+    height: 25vh;
+    width:15vw;
+}
+
+.contacticon1 img{
+    top:10;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+.contacticon a:link{
+    top:10;
+    position: absolute;
+    color: var(--color1);
+    
+
+    height: 4rem;
+    border-radius: 12px;
+    text-decoration: none;
+    outline: none;
+}
+
+.contacticon2{
+    top:10;
+    position: absolute;
+    height: 25vh;
+    width:15vw;
+}
+
+.contacticon2 img{
+    top:10;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
